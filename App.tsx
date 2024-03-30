@@ -1,11 +1,13 @@
 import React from 'react';
 
-import {SafeAreaView, Text} from 'react-native';
+import {SafeAreaView} from 'react-native';
+import {Text} from './src/components/Text/Text';
 
 function App(): JSX.Element {
   return (
-    <SafeAreaView>
-      <Text>React Native</Text>
+    <SafeAreaView
+      style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
+      <Text style={{color: 'blue', fontSize: 40}}>React Native</Text>
     </SafeAreaView>
   );
 }
